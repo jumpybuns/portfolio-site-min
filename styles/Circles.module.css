@@ -1,0 +1,29 @@
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+.circ {
+  fill: coral;
+  stroke: black;
+  stroke-width: 3;
+  transition: ease-in-out 3s;
+  opacity: 25%;
+}
+
+.circ active {
+  fill: coral;
+  stroke: black;
+  stroke-width: 3;
+  pointer-events: none;
+}
+
+.lastCircle {
+  opacity: 25%;
+  fill: burlywood;
+  stroke: black;
+  stroke-width: 3;
+}

@@ -1,0 +1,34 @@
+.title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  letter-spacing: 5px;
+  color: var(--text);
+  padding-bottom: 20px;
+  text-align: center;
+}
+.text {
+  color: var(--secondaryText);
+}
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: #4979ff;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
