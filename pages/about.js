@@ -46,13 +46,13 @@ const About = () => {
           <pre>HTML CSS Javascript</pre>
 
           <h2>Front End</h2>
-          <pre>React Typescript D3 Material-UI</pre>
+          <pre>React NextJS Socket.IO D3 Material-UI</pre>
 
           <h2>Back End</h2>
           <pre>Node GraphQL postgreSQL Express</pre>
 
           <h2>Dev Tools</h2>
-          <pre>Netlify Heroku Postman PGAdmin</pre>
+          <pre>Netlify Heroku MongoDB Postman PGAdmin</pre>
         </div>
       </div>
     </>
