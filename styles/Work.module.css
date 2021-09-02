@@ -1,0 +1,37 @@
+.container {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: var(--text);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.work {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+}
+
+.aurora:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+.karaoke:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+.chatable:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+.bloom:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+.images {
+  border-radius: 50%;
+}

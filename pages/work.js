@@ -84,9 +84,15 @@ const Work = () => {
             Bloom Financial
           </h3>
         </div>
-        <div className={styles.images}>
-          <Image src={selected} alt="project" width={384} height={216} />
-        </div>
+
+        <Image
+          className={styles.images}
+          src={selected}
+          alt="project"
+          width={384}
+          height={216}
+        />
+
         <div className={styles.description}>
           <p>{selectedText}</p>
         </div>

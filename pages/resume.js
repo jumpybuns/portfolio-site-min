@@ -3,13 +3,14 @@ import styles from "../styles/Resume.module.css";
 
 const Resume = () => {
   return (
-    <div className={styles.resume}>
+    <div>
       <Image
+        className={styles.resume}
         src="/resume.png"
         alt=""
         layout="responsive"
-        width={720}
-        height={960}
+        width={36}
+        height={48}
       />
     </div>
   );

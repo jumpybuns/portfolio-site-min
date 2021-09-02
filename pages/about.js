@@ -11,9 +11,7 @@ const About = () => {
         <title>Ethan Pierce | About</title>
       </Head>
       <div className={styles.container}>
-        <div className={styles.aboutMeBox}>
-          <h1>ABOUT ME</h1>
-        </div>
+        <h1 className={styles.aboutMeBox}>ABOUT ME</h1>
         <div className={styles.text}>
           <h3>
             Creative problem solver, communicative collaborator with a passion
@@ -21,9 +19,15 @@ const About = () => {
             high-pressure situations.
           </h3>
         </div>
-        <div className={styles.profile}>
-          <Image src="/profile.jpg" width={180} height={260} alt="profile" />
-        </div>
+
+        <Image
+          className={styles.profile}
+          src="/profile.jpg"
+          width={180}
+          height={260}
+          alt="profile"
+        />
+
         <div className={styles.text2}>
           <h3>
             Able to work independently and think critically to develop

@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { useTheme } from "next-themes";
-import { useRouter } from "next/router";
 
 const NavBar = () => {
   return (
     <nav>
-      <div className="logo">
-        <h2>Ethan Pierce</h2>
-      </div>
       <Link href="/">
         <a>Home</a>
       </Link>

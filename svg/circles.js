@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import styles from "../styles/Circles.module.css";
 
-const circleRadius = 200;
+const circleRadius = 250;
 const intialMousePosition = { x: 0, y: 0 };
 const circleRadius2 = 150;
 
@@ -32,7 +32,7 @@ const Circles = () => {
         className={styles.mydivheader}
         width={width}
         height={height}
-        onMouseDown={handleMouseMove}
+        onMouseOver={handleMouseMove}
       >
         <circle
           className={styles.circ}

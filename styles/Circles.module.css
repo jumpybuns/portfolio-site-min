@@ -18,12 +18,12 @@
   fill: coral;
   stroke: black;
   stroke-width: 3;
-  pointer-events: none;
 }
 
 .lastCircle {
-  opacity: 25%;
-  fill: burlywood;
+  opacity: 30%;
   stroke: black;
   stroke-width: 3;
+  fill: burlywood;
+  z-index: 99;
 }
