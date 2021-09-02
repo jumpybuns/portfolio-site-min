@@ -32,7 +32,7 @@ const Circles = () => {
         className={styles.mydivheader}
         width={width}
         height={height}
-        onMouseOver={handleMouseMove}
+        onMouseDown={handleMouseMove}
       >
         <circle
           className={styles.circ}
