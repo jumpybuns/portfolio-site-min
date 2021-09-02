@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 :root {
   --primary: #fffcf2;
   --secondary: #fdf2d4;
@@ -25,8 +25,8 @@ a {
   margin: 0 auto;
 }
 nav {
-  margin: 40px auto 2rem;
-  padding: 20px 0;
+  margin: 20px auto 2rem;
+  padding: 20px 0 0 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -51,7 +51,6 @@ footer {
   display: block;
   text-align: center;
   padding: 30px 0;
-  margin-top: 60px;
   color: var(--secondaryText);
   border-top: 1px solid #eaeaea;
 }

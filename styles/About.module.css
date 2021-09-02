@@ -7,11 +7,15 @@
   padding-bottom: 20px;
   text-align: center;
 }
-
 .aboutMeBox {
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
 }
 .profile {
   border-radius: 50%;
+}
+
+.techStack {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
 }

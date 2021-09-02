@@ -7,6 +7,7 @@ import karaoke from "../public/karaokeWide.jpg";
 import chatable from "../public/chatableWide.jpg";
 import bloom from "../public/bloomWide.jpg";
 import styles from "../styles/Work.module.css";
+import Circles from "../svg/staticCircles";
 
 const auroraTitle = "Aurora Synth";
 const karaokeTitle = "Karaoke Roulette";
@@ -37,52 +38,65 @@ const Work = () => {
       <Head>
         <title>Ethan Pierce | Work</title>
       </Head>
+      <Circles />
       <div className={styles.container}>
         <h1 className={styles.work}>WORK</h1>
         <div className={styles.links}>
-          <h3
-            className={styles.aurora}
-            onMouseOver={() => {
-              setSelected(images.aurora);
-              setSelectedText(auroraText);
-              setSelectedTitle(auroraTitle);
-            }}
+          <Link
+            href={"https://aurora-synth.netlify.app/aurora/index.html"}
+            passHref
           >
-            Aurora Synth
-          </h3>
-
-          <h3
-            className={styles.karaoke}
-            onMouseOver={() => {
-              setSelected(images.karaoke);
-              setSelectedText(karaokeText);
-              setSelectedTitle(karaokeTitle);
-            }}
-          >
-            Karaoke Roulette
-          </h3>
-
-          <h3
-            className={styles.chatable}
-            onMouseOver={() => {
-              setSelected(images.chatable);
-              setSelectedText(chatableText);
-              setSelectedTitle(chatableTitle);
-            }}
-          >
-            Chatable
-          </h3>
-
-          <h3
-            className={styles.bloom}
-            onMouseOver={() => {
-              setSelected(images.bloom);
-              setSelectedText(bloomText);
-              setSelectedTitle(bloomTitle);
-            }}
-          >
-            Bloom Financial
-          </h3>
+            <a
+              target="_blank"
+              className={styles.aurora}
+              onMouseOver={() => {
+                setSelected(images.aurora);
+                setSelectedText(auroraText);
+                setSelectedTitle(auroraTitle);
+              }}
+            >
+              Aurora Synth
+            </a>
+          </Link>
+          <Link href={"https://karaoke-roulette.netlify.app/"} passHref>
+            <a
+              target="_blank"
+              className={styles.karaoke}
+              onMouseOver={() => {
+                setSelected(images.karaoke);
+                setSelectedText(karaokeText);
+                setSelectedTitle(karaokeTitle);
+              }}
+            >
+              Karaoke Roulette
+            </a>
+          </Link>
+          <Link href={"https://adoring-wright-0eba98.netlify.app/"} passHref>
+            <a
+              target="_blank"
+              className={styles.chatable}
+              onMouseOver={() => {
+                setSelected(images.chatable);
+                setSelectedText(chatableText);
+                setSelectedTitle(chatableTitle);
+              }}
+            >
+              Chatable
+            </a>
+          </Link>
+          <Link href={"https://bloom-financial.netlify.app/"} passHref>
+            <a
+              target="_blank"
+              className={styles.bloom}
+              onMouseOver={() => {
+                setSelected(images.bloom);
+                setSelectedText(bloomText);
+                setSelectedTitle(bloomTitle);
+              }}
+            >
+              Bloom Financial
+            </a>
+          </Link>
         </div>
 
         <Image

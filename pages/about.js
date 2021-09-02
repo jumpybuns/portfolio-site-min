@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+import Circles from "../svg/staticCircles";
 import styles from "../styles/About.module.css";
 
 const About = () => {
@@ -10,6 +9,7 @@ const About = () => {
       <Head>
         <title>Ethan Pierce | About</title>
       </Head>
+      <Circles />
       <div className={styles.container}>
         <h1 className={styles.aboutMeBox}>ABOUT ME</h1>
         <div className={styles.text}>
@@ -19,14 +19,14 @@ const About = () => {
             high-pressure situations.
           </h3>
         </div>
-
+        {/* 
         <Image
           className={styles.profile}
           src="/profile.jpg"
           width={180}
           height={260}
           alt="profile"
-        />
+        /> */}
 
         <div className={styles.text2}>
           <h3>
