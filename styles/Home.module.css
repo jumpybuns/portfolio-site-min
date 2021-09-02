@@ -1,7 +1,8 @@
 .title {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Heebo", sans-serif;
   font-size: 5rem;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
+  font-stretch: ultra-condensed;
   color: var(--text);
   padding-bottom: 20px;
   text-align: center;
