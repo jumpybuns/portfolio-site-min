@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import styles from "../styles/Circles.module.css";
 
-const circleRadius = 250;
+const circleRadius = 240;
 const intialMousePosition = { x: 0, y: 0 };
 const circleRadius2 = 150;
 

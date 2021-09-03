@@ -2,19 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&family=Nanum+Gothic+Coding&family=Nunito:wght@300&family=Poiret+One&display=swap");
 :root {
-  --primary: #fffcf2;
+  --primary: #fafafa;
   --secondary: #fdf2d4;
   --highlight: #f89c2a;
   --text: #373741;
   --secondaryText: #777;
 }
 
+html,
 body {
   color: var(--text);
-  font-family: "Raleway", sans-serif;
+  font-family: "Poiret One", cursive;
   background-color: var(--primary);
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 a {
   color: var(--text);
@@ -24,28 +28,6 @@ a {
   max-width: 960px;
   margin: 0 auto;
 }
-nav {
-  margin: 20px auto 2rem;
-  padding: 22px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-  transition: all 0.2s ease-in-out;
-}
-nav a {
-  font-size: 1.3rem;
-  margin-left: 12px;
-}
-
-nav a:hover {
-  color: var(--highlight);
-  transform: scale(1.1);
-}
-nav .logo {
-  color: var(--text);
-  margin-right: auto;
-}
 
 footer {
   display: block;
@@ -53,6 +35,9 @@ footer {
   padding: 30px 0;
   color: var(--secondaryText);
   border-top: 1px solid #eaeaea;
+  position: relative;
+  z-index: 2;
+  animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 footer a {

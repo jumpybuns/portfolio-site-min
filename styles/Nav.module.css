@@ -1,0 +1,41 @@
+.container {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 100px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  right: 3%;
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  background-color: var(--primary); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  transition: 0.5s;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.link {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: var(--secondaryText);
+  display: block;
+  transition: 0.3s;
+}
+
+.link:hover {
+  transform: scale(1.1, 1.1);
+  color: var(--highlight);
+}
+
+.linkActive {
+  color: var(--highlight);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

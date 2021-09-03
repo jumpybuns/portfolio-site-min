@@ -38,8 +38,8 @@ const Work = () => {
       <Head>
         <title>Ethan Pierce | Work</title>
       </Head>
-      <Circles />
       <div className={styles.container}>
+        <Circles />
         <h1 className={styles.work}>WORK</h1>
         <div className={styles.links}>
           <Link
@@ -71,7 +71,10 @@ const Work = () => {
               Karaoke Roulette
             </a>
           </Link>
-          <Link href={"https://adoring-wright-0eba98.netlify.app/"} passHref>
+          <Link
+            href={"https://adoring-wright-0eba98.netlify.app/landing-page"}
+            passHref
+          >
             <a
               target="_blank"
               className={styles.chatable}

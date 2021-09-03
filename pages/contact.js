@@ -20,7 +20,7 @@ const Contact = () => {
         <div className={styles.downloadButton}>
           <a
             className={styles.myButton}
-            href="../public/resume.png"
+            href={"https://i.postimg.cc/jdC9sY2q/Ethan-Pierce-Resume.png"}
             download="Ethan Pierce Resume"
           >
             Download Resume
