@@ -66,8 +66,8 @@ const Circles = () => {
         />
         <circle
           className={styles.lastCircle}
-          cx={mousePosition.x * 0.6}
-          cy={mousePosition.y * 0.6}
+          cx={mousePosition.x}
+          cy={mousePosition.y}
           r={circleRadius - circleRadius2}
         />
       </svg>

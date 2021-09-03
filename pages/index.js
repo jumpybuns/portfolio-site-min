@@ -5,7 +5,6 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <>
-      <Circles />
       <div className={styles.container}>
         <Head>
           <title>Ethan Pierce | Home</title>
@@ -15,6 +14,7 @@ export default function Home() {
 
         <main className={styles.main}>
           <h1 className={styles.title}>Ethan Pierce</h1>
+          <Circles />
 
           <h2 className={styles.description}>
             Software Developer Based in Portland, OR
