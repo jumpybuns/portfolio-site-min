@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
-import styles from "../styles/Circles.module.css";
+import styles from "../styles/StaticCircles.module.css";
 
-const circleRadius = 250;
+const circleRadius = 240;
 const intialMousePosition = { x: 0, y: 0 };
 const circleRadius2 = 150;
 
@@ -11,7 +11,7 @@ const Circles = () => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    setWidth(window.innerWidth / 3);
   }, []);
 
   useEffect(() => {

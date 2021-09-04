@@ -1,34 +1,44 @@
 .title {
-  font-family: "Bebas Neue", cursive;
-  font-size: 5rem;
-  letter-spacing: 4px;
-  font-stretch: ultra-condensed;
+  font-family: "Poiret One", cursive;
+  font-weight: 100;
+  font-size: 9rem;
+  position: relative;
+  left: 200px;
   color: var(--text);
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.btn {
-  display: block;
-  width: 150px;
-  padding: 8px 0;
-  margin: 20px auto;
-  background: #4979ff;
-  border-radius: 4px;
-  color: white;
-  text-align: center;
+  text-align: start;
+  /* animation: myAnim 1s ease 0s 1 normal forwards; */
 }
 
 .description {
+  font-family: "Poiret One", cursive;
+  font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text);
+  /* animation: myAnim 2s ease 0s 1 normal forwards; */
+}
+
+.phrase {
+  width: 25%;
+  /* animation: myAnim 2s ease 0s 1 normal backwards; */
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

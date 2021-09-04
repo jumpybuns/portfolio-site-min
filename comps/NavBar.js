@@ -1,25 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
+import styles from "../styles/Nav.module.css";
+import { useRouter } from "next/router";
+
+const menu = [
+  { title: "Home", path: "/" },
+  { title: "About", path: "/about" },
+  { title: "Work", path: "/work" },
+  { title: "Vlog", path: "/vlog" },
+  { title: "Contact", path: "/contact" },
+];
 
 const NavBar = () => {
+  const router = useRouter();
+
   return (
-    <nav>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-      <Link href="/work">
-        <a>Work</a>
-      </Link>
-      <Link href="/vlog">
-        <a>Vlog</a>
-      </Link>
-      <Link href="/resume">
-        <a>Resume</a>
-      </Link>
-    </nav>
+    <div className={styles.container}>
+      {menu.map((item, index) => {
+        return (
+          <Link key={index} href={item.path}>
+            <a
+              className={`${styles.link} ${
+                router.pathname === item.path ? styles.linkActive : null
+              }`}
+            >
+              {item.title}
+            </a>
+          </Link>
+        );
+      })}
+    </div>
   );
 };
 

@@ -19,15 +19,6 @@ const About = () => {
             high-pressure situations.
           </h3>
         </div>
-        {/* 
-        <Image
-          className={styles.profile}
-          src="/profile.jpg"
-          width={180}
-          height={260}
-          alt="profile"
-        /> */}
-
         <div className={styles.text2}>
           <h3>
             Able to work independently and think critically to develop
