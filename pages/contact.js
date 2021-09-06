@@ -52,7 +52,6 @@ const Contact = () => {
               <a target="_blank">Email</a>
             </Link>
           </li>
-          <li>541.999.9714</li>
           <li>
             <Link
               href={
@@ -63,6 +62,7 @@ const Contact = () => {
               <a target="_blank">WhatsApp</a>
             </Link>
           </li>
+          <li>541.999.9714</li>
         </ul>
         <div className={styles.resume}>
           <a

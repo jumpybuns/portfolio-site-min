@@ -6,7 +6,7 @@
   left: 200px;
   color: var(--text);
   text-align: start;
-  /* animation: myAnim 1s ease 0s 1 normal forwards; */
+  animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
 .description {
@@ -16,12 +16,12 @@
   align-items: center;
   justify-content: center;
   color: var(--text);
-  /* animation: myAnim 2s ease 0s 1 normal forwards; */
+  animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
 .phrase {
   width: 25%;
-  /* animation: myAnim 2s ease 0s 1 normal backwards; */
+  animation: myAnim 2s ease 0s 1 normal backwards;
 }
 
 @media (max-width: 600px) {
@@ -34,7 +34,7 @@
 @keyframes myAnim {
   0% {
     opacity: 0;
-    transform: translateX(250px);
+    transform: translateX(20px);
   }
 
   100% {
