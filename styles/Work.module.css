@@ -12,6 +12,7 @@
 .work {
   font-family: "Poiret One", cursive;
   font-size: 3rem;
+  animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
 .links {
@@ -24,6 +25,7 @@
   justify-content: space-between;
   align-items: baseline;
   padding-bottom: 20px;
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 .aurora:hover {
   color: var(--highlight);
@@ -46,10 +48,35 @@
 
 .images {
   border-radius: 50%;
+  animation: fadeIn 1s ease-in;
 }
 
 .description {
   letter-spacing: 1px;
   width: 90%;
   font-weight: 800;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    transition: 1s;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }

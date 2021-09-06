@@ -9,11 +9,29 @@
 }
 .aboutMeBox {
   font-size: 3rem;
-}
-.profile {
-  border-radius: 50%;
+  animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
+.text {
+  animation: myAnim 2s ease 0s 1 normal backwards;
+}
 .techStack {
   font-size: 1.5rem;
+  animation: myAnim 0.2s ease 0s 1 normal forwards;
+}
+
+.text2 {
+  line-height: 1rem;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

@@ -19,7 +19,7 @@ const About = () => {
             high-pressure situations.
           </h3>
         </div>
-        <div className={styles.text2}>
+        <div className={styles.text}>
           <h3>
             Able to work independently and think critically to develop
             human-centered solutions. I am an efficient, fun, and patient
@@ -32,7 +32,7 @@ const About = () => {
         <div className={styles.techStack}>
           <h1>TECH STACK</h1>
         </div>
-        <div className={styles.techs}>
+        <div className={styles.text2}>
           <h2>Languages</h2>
           <pre>HTML CSS Javascript</pre>
 

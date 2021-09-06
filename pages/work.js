@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,11 +8,17 @@ import chatable from "../public/chatableWide.jpg";
 import bloom from "../public/bloomWide.jpg";
 import styles from "../styles/Work.module.css";
 import Circles from "../svg/staticCircles";
+import Loading from "./loading";
 
 const auroraTitle = "Aurora Synth";
 const karaokeTitle = "Karaoke Roulette";
 const chatableTitle = "Chatable";
 const bloomTitle = "Bloom Financial";
+
+const auroraCode = "https://github.com/bryanakitchen/aurora";
+const karaokeCode = "https://github.com/Karaoke-Roulette";
+const chatableCode = "https://github.com/Chatable-2021";
+const bloomCode = "https://github.com/Bloom-Financial";
 
 const auroraText =
   "Beautiful interactive web browser synth built with vanilla JavaScript and Web Audio API. I implimented the series of audio nodes and created the different wave shapes and filters as well as used ChartJS to create the dynamic graph";
@@ -32,88 +38,102 @@ const Work = () => {
   const [selected, setSelected] = useState(images.aurora);
   const [selectedText, setSelectedText] = useState(auroraText);
   const [selectedTitle, setSelectedTitle] = useState(auroraTitle);
+  const [loading, setLoading] = useState(true);
+  const [selectedCode, setSelectedCode] = useState(auroraCode);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false));
+  }, []);
 
   return (
     <>
       <Head>
         <title>Ethan Pierce | Work</title>
       </Head>
-      <div className={styles.container}>
-        <Circles />
-        <h1 className={styles.work}>WORK</h1>
-        <div className={styles.links}>
-          <Link
-            href={"https://aurora-synth.netlify.app/aurora/index.html"}
-            passHref
-          >
-            <a
-              target="_blank"
-              className={styles.aurora}
-              onMouseOver={() => {
-                setSelected(images.aurora);
-                setSelectedText(auroraText);
-                setSelectedTitle(auroraTitle);
-              }}
+      {loading === false ? (
+        <div className={styles.container}>
+          <Circles />
+          <h1 className={styles.work}>WORK</h1>
+          <div className={styles.links}>
+            <Link
+              href={"https://aurora-synth.netlify.app/aurora/index.html"}
+              passHref
             >
-              Aurora Synth
-            </a>
-          </Link>
-          <Link href={"https://karaoke-roulette.netlify.app/"} passHref>
-            <a
-              target="_blank"
-              className={styles.karaoke}
-              onMouseOver={() => {
-                setSelected(images.karaoke);
-                setSelectedText(karaokeText);
-                setSelectedTitle(karaokeTitle);
-              }}
+              <a
+                target="_blank"
+                className={styles.aurora}
+                onMouseOver={() => {
+                  setSelected(images.aurora);
+                  setSelectedText(auroraText);
+                  setSelectedTitle(auroraTitle);
+                  setSelectedCode(auroraCode);
+                }}
+              >
+                Aurora Synth
+              </a>
+            </Link>
+            <Link href={"https://karaoke-roulette.netlify.app/"} passHref>
+              <a
+                target="_blank"
+                className={styles.karaoke}
+                onMouseOver={() => {
+                  setSelected(images.karaoke);
+                  setSelectedText(karaokeText);
+                  setSelectedTitle(karaokeTitle);
+                  setSelectedCode(karaokeCode);
+                }}
+              >
+                Karaoke Roulette
+              </a>
+            </Link>
+            <Link
+              href={"https://adoring-wright-0eba98.netlify.app/landing-page"}
+              passHref
             >
-              Karaoke Roulette
-            </a>
-          </Link>
-          <Link
-            href={"https://adoring-wright-0eba98.netlify.app/landing-page"}
-            passHref
-          >
-            <a
-              target="_blank"
-              className={styles.chatable}
-              onMouseOver={() => {
-                setSelected(images.chatable);
-                setSelectedText(chatableText);
-                setSelectedTitle(chatableTitle);
-              }}
-            >
-              Chatable
-            </a>
-          </Link>
-          <Link href={"https://bloom-financial.netlify.app/"} passHref>
-            <a
-              target="_blank"
-              className={styles.bloom}
-              onMouseOver={() => {
-                setSelected(images.bloom);
-                setSelectedText(bloomText);
-                setSelectedTitle(bloomTitle);
-              }}
-            >
-              Bloom Financial
-            </a>
-          </Link>
-        </div>
+              <a
+                target="_blank"
+                className={styles.chatable}
+                onMouseOver={() => {
+                  setSelected(images.chatable);
+                  setSelectedText(chatableText);
+                  setSelectedTitle(chatableTitle);
+                  setSelectedCode(chatableCode);
+                }}
+              >
+                Chatable
+              </a>
+            </Link>
+            <Link href={"https://bloom-financial.netlify.app/"} passHref>
+              <a
+                target="_blank"
+                className={styles.bloom}
+                onMouseOver={() => {
+                  setSelected(images.bloom);
+                  setSelectedText(bloomText);
+                  setSelectedTitle(bloomTitle);
+                  setSelectedCode(bloomCode);
+                }}
+              >
+                Bloom Financial
+              </a>
+            </Link>
+          </div>
+          {/* <div className={styles.code}>{selectedCode}</div> */}
+          <Image
+            className={styles.images}
+            src={selected}
+            alt="project"
+            width={384}
+            height={216}
+          />
 
-        <Image
-          className={styles.images}
-          src={selected}
-          alt="project"
-          width={384}
-          height={216}
-        />
-
-        <div className={styles.description}>
-          <p>{selectedText}</p>
+          <div className={styles.description}>
+            <p>{selectedText}</p>
+          </div>
         </div>
-      </div>
+      ) : (
+        <Loading />
+      )}
     </>
   );
 };

@@ -8,9 +8,16 @@
   text-align: center;
 }
 
+.contactMe {
+  font-family: "Poiret One", cursive;
+  font-size: 1rem;
+  animation: myAnim 0.2s ease 0s 1 normal forwards;
+}
+
 .text {
   padding: 0% 0% 0% 20%;
   width: 80%;
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 
 .socials {
@@ -19,6 +26,14 @@
   list-style: none;
   line-height: 2rem;
   border-bottom: 1px solid #eaeaea;
+  animation: myAnim 0.2s ease 0s 1 normal forwards;
+}
+.socials a {
+  padding: 1rem;
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+.socials a:hover {
+  color: var(--highlight);
 }
 
 .contacts {
@@ -26,9 +41,44 @@
   list-style: none;
   line-height: 2rem;
   border-bottom: 1px solid #eaeaea;
+  animation: myAnim 0.2s ease 0s 1 normal forwards;
+}
+
+.contacts a {
+  animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+
+.contacts a:hover {
+  color: var(--highlight);
 }
 
 .resume {
   font-size: 3rem;
   line-height: 5rem;
+  animation: fadeInResume 1s ease-in;
+}
+
+.resume a:hover {
+  color: var(--highlight);
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInResume {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
