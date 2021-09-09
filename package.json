@@ -11,19 +11,24 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
+    "@styled-icons/evaicons-solid": "^10.34.0",
+    "@tailwindcss/typography": "^0.4.1",
     "material-design-icons": "^3.0.1",
     "next": "11.1.2",
     "next-themes": "0.0.15",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-switch": "^6.0.0",
     "sharp": "^0.29.0",
+    "styled-components": "^5.3.1",
+    "styled-icons": "^10.38.0",
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.3",
+    "autoprefixer": "^10.3.4",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.9"
+    "tailwindcss": "^2.2.14"
   }
 }
