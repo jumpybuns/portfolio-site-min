@@ -14,13 +14,14 @@
 }
 
 .text {
-  padding: 0% 0% 0% 20%;
+  padding: 0% 0% 0% 10%;
   width: 80%;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 
 .socials,
 .contacts {
+  margin: 0 auto;
   padding-right: 45px;
   font-size: 1.25;
   list-style: none;

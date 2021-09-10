@@ -6,7 +6,6 @@ import { GlobalStyles } from "../theme/GlobalStyles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import PropTypes from "prop-types";
 import ThemeProvider from "../theme/ThemeProvider";
-import ThemeToggler from "../theme/ThemeToggler";
 
 function MyApp(props) {
   const { Component, pageProps } = props;
@@ -29,8 +28,6 @@ function MyApp(props) {
       {loading === false ? (
         <ThemeProvider>
           <Layout>
-            <CssBaseline />
-            <ThemeToggler />
             <GlobalStyles />
             <Component {...pageProps} />
           </Layout>

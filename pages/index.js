@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Circles from "../svg/circles";
 import styles from "../styles/Home.module.css";
+import ThemeToggler from "../theme/ThemeToggler";
+import ThemedTitle from "../theme/ThemedTitle";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
         <Circles />
         <main className={styles.main}>
           <pre className={styles.title}> Ethan Pierce</pre>
+          <ThemeToggler />
           <p className={styles.phrase}>
             CLICK AROUND TO HELP ME DESIGN MY HOME PAGE
           </p>

@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import Switch from "react-switch";
 import styled from "styled-components";
 import { ThemeContext } from "./ThemeProvider";
-import styles from "../styles/Toggler.module.css";
+import styles from "../styles/Home.module.css";
 
 const Icon = styled.div`
   height: 100%;
@@ -35,13 +35,13 @@ const ThemeToggler = () => {
             <MoonIcon size="20px" />
           </Icon>
         }
-        onColor="#191970"
+        onColor="#fce5a6"
         uncheckedIcon={
           <Icon>
             <SunIcon size="20px" />
           </Icon>
         }
-        offColor="#87ceeb"
+        offColor="#373741"
       />
     </div>
   );
