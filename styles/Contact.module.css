@@ -21,7 +21,6 @@
 
 .socials,
 .contacts {
-  margin: 0 auto;
   padding-right: 45px;
   font-size: 1.25;
   list-style: none;
@@ -31,7 +30,6 @@
 }
 .socials a,
 .contacts a {
-  padding: 1rem;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 .socials a:hover,
@@ -42,7 +40,7 @@
 
 .resume {
   font-size: 3rem;
-  line-height: 5rem;
+  line-height: 4rem;
   animation: fadeInResume 1s ease-in;
 }
 
