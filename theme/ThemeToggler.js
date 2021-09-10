@@ -18,7 +18,7 @@ const SunIcon = styled(Sun)`
 `;
 
 const MoonIcon = styled(Moon)`
-  color: #f5f3ce;
+  color: #373741;
 `;
 
 const ThemeToggler = () => {

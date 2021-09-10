@@ -1,12 +1,13 @@
 .container {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 100px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  height: 100%;
+  width: 100px;
+  background: var(--primary);
+  position: fixed;
   right: 3%;
-  z-index: 2; /* Stay on top */
-  top: 0; /* Stay at the top */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  overflow-y: hidden; /* Disable horizontal scroll */
+  z-index: 2;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding-top: 20px;
   transition: 0.5s;
   border-left: 1px solid black;
@@ -14,7 +15,8 @@
 }
 
 .link {
-  margin: 0 auto;
+  color: var(--text);
+  background: var(--primary);
   font-weight: 900;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -42,7 +44,9 @@
 }
 
 .socials a {
-  padding: 1rem;
+  color: var(--text);
+  background: var(--primary);
+  padding: 0.5rem 1rem 1rem 1rem;
   transform: scale(1.5);
 }
 .socials a:hover {
