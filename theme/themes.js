@@ -1,5 +1,4 @@
 const black = "#373741";
-
 const secondary = "#fdf2d4";
 const primary = "fafafa";
 
