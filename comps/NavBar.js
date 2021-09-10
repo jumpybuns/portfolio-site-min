@@ -32,6 +32,7 @@ const NavBar = () => {
           </Link>
         );
       })}
+
       <div className={styles.socials}>
         <Link href={"https://github.com/jumpybuns"} passHref>
           <a target="_blank">

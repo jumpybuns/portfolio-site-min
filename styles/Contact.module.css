@@ -3,7 +3,6 @@
   font-weight: 900;
   font-size: 1rem;
   letter-spacing: 2px;
-  color: var(--text);
   padding-bottom: 20px;
   text-align: center;
 }
@@ -15,12 +14,14 @@
 }
 
 .text {
-  padding: 0% 0% 0% 20%;
+  padding: 0% 0% 0% 10%;
   width: 80%;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
 
-.socials {
+.socials,
+.contacts {
+  margin: 0 auto;
   padding-right: 45px;
   font-size: 1.25;
   list-style: none;
@@ -28,28 +29,15 @@
   border-bottom: 1px solid #eaeaea;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
-.socials a {
+.socials a,
+.contacts a {
   padding: 1rem;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
-.socials a:hover {
-  color: var(--highlight);
-}
-
-.contacts {
-  padding-right: 45px;
-  list-style: none;
-  line-height: 2rem;
-  border-bottom: 1px solid #eaeaea;
-  animation: myAnim 0.2s ease 0s 1 normal forwards;
-}
-
-.contacts a {
-  animation: myAnim 0.5s ease 0s 1 normal forwards;
-}
-
+.socials a:hover,
 .contacts a:hover {
   color: var(--highlight);
+  text-decoration: underline;
 }
 
 .resume {
