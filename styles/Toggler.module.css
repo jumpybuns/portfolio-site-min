@@ -1,0 +1,5 @@
+.toggler {
+  position: absolute;
+  right: 200px;
+  z-index: 99;
+}

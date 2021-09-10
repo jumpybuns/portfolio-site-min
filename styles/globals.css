@@ -16,14 +16,12 @@ html,
 body {
   width: 100vw;
   min-height: 100vh;
-  color: var(--text);
   font-family: "Poiret One", cursive;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 a {
-  color: var(--text);
   text-decoration: none;
 }
 .content {
@@ -35,7 +33,6 @@ footer {
   display: block;
   text-align: center;
   padding: 30px 0;
-  color: var(--secondaryText);
   border-top: 1px solid #eaeaea;
   position: relative;
   z-index: 2;
@@ -46,7 +43,6 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--highlight);
   transform: scale(1.1);
 }
 
@@ -55,6 +51,5 @@ footer a:hover {
 }
 
 .not-found a {
-  color: var(--highlight);
   text-decoration: underline;
 }

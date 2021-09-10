@@ -4,7 +4,6 @@ import styles from "../styles/Nav.module.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import ThemeToggler from "../theme/ThemeToggler";
 import { useRouter } from "next/router";
 
 const menu = [
@@ -33,7 +32,6 @@ const NavBar = () => {
           </Link>
         );
       })}
-      <ThemeToggler />
       <div className={styles.socials}>
         <Link href={"https://github.com/jumpybuns"} passHref>
           <a target="_blank">

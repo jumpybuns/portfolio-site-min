@@ -1,13 +1,14 @@
-const black = "#363537";
-const lightGrey = "#E55361";
-const white = "#A0EE45";
+const black = "#373741";
+
+const secondary = "#fdf2d4";
+const primary = "fafafa";
 
 export const lightTheme = {
   text: black,
-  background: lightGrey,
+  background: primary,
 };
 
 export const darkTheme = {
-  text: white,
+  text: secondary,
   background: black,
 };
