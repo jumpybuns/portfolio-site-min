@@ -1,6 +1,4 @@
 .container {
-  font-family: "Urbanist", sans-serif;
-  font-weight: 100;
   font-size: 1rem;
   letter-spacing: 2px;
   padding-bottom: 20px;
@@ -8,19 +6,23 @@
 }
 .aboutMeBox {
   font-size: 3rem;
+  font-weight: 200;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
-.text {
+.text h3 {
+  font-weight: 200;
+  font-family: "Urbanist", sans-serif;
   animation: myAnim 2s ease 0s 1 normal backwards;
 }
-.techStack {
-  font-size: 1.5rem;
+.techStack h1 {
+  font-size: 3rem;
+  font-weight: 200;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
-.text2 {
-  line-height: 1rem;
+.text2 h2 {
+  line-height: 0.25em;
 }
 
 @keyframes myAnim {
