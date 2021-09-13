@@ -14,7 +14,8 @@ export default function Home() {
         </Head>
         <Circles />
         <main className={styles.main}>
-          <pre className={styles.title}> Ethan Pierce</pre>
+          <pre className={styles.ethan}>Ethan </pre>
+          <pre className={styles.pierce}>Pierce</pre>
           <ThemeToggler />
           <p className={styles.phrase}>
             CLICK AROUND TO SEE THE FLUIDITY OF COLLABORATION IN ACTION

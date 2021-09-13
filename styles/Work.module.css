@@ -51,9 +51,11 @@
 }
 
 .description {
+  font-size: 1.25em;
   letter-spacing: 1px;
+  padding-left: 3%;
   width: 90%;
-
+  font-family: "Bookman";
   animation: fadeIn 1s ease-in;
 }
 
