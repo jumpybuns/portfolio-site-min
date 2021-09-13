@@ -1,6 +1,5 @@
 .container {
   font-family: "Urbanist", sans-serif;
-  font-weight: 200;
   font-size: 1rem;
   letter-spacing: 2px;
   padding-bottom: 20px;
@@ -9,13 +8,13 @@
 }
 
 .work {
+  font-weight: 200;
   font-size: 3rem;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
 .links {
   font-size: 1.5rem;
-  font-weight: 700;
   line-height: 1.5em;
   display: flex;
   flex-direction: column;
@@ -53,7 +52,7 @@
 .description {
   letter-spacing: 1px;
   width: 90%;
-  font-weight: 800;
+
   animation: fadeIn 1s ease-in;
 }
 
