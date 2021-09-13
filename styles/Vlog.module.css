@@ -1,8 +1,8 @@
-.container {
-  font-family: "Urbanist", sans-serif;
+.container h1 {
+  font-family: "Eurostile";
   font-weight: 200;
-  font-size: 1rem;
-  letter-spacing: 2px;
+  font-size: 3rem;
+  letter-spacing: -2px;
   padding-bottom: 20px;
   text-align: center;
 }

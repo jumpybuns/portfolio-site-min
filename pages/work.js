@@ -9,37 +9,20 @@ import bloom from "../public/bloomWide.jpg";
 import styles from "../styles/Work.module.css";
 import Circles from "../svg/staticCircles";
 import Loading from "./loading";
+import projects from "./api/workDetails";
 
-const auroraTitle = "Aurora Synth";
-const karaokeTitle = "Karaoke Roulette";
-const chatableTitle = "Chatable";
-const bloomTitle = "Bloom Financial";
-
-const auroraCode = "https://github.com/bryanakitchen/aurora";
-const karaokeCode = "https://github.com/Karaoke-Roulette";
-const chatableCode = "https://github.com/Chatable-2021";
-const bloomCode = "https://github.com/Bloom-Financial";
-
-const auroraText =
-  "Elegant interactive web browser synth built with vanilla JavaScript and Web Audio API. I implimented the series of audio nodes and created the different wave shapes and filters as well as used ChartJS to create the dynamic graph";
-
-const karaokeText =
-  "Social app utilizing YouTube API to create randomized karaoke videos. We used Javascript, React, SQL, Heroku, Netlify, CSS I created the API call, implemented the authorization, ran tests, and created the CRUD routes.";
-
-const chatableText =
-  "Instantaneous live chat app and chat rooms created with Socket.IO and Material-UI. I designed and created the messaging emits and broadcasts. I also wrote the User and Auth models/routes. ";
-
-const bloomText =
-  "Stock Trading learning tool using NewsAPI, Live Stock Ticker, Finance Widget and seamlessly integrating Alpaca Finance with your own portfolio. I setup the Oauth, created the landing page and built the entirety of the Alpaca integration.";
+const work = projects.map((item) => {
+  return item;
+});
 
 const images = { aurora, karaoke, chatable, bloom };
 
 const Work = () => {
   const [selected, setSelected] = useState(images.aurora);
-  const [selectedText, setSelectedText] = useState(auroraText);
-  const [selectedTitle, setSelectedTitle] = useState(auroraTitle);
+  const [selectedText, setSelectedText] = useState(work[0].auroraText);
+  const [selectedTitle, setSelectedTitle] = useState(work[0].auroraTitle);
   const [loading, setLoading] = useState(true);
-  const [selectedCode, setSelectedCode] = useState(auroraCode);
+  const [selectedCode, setSelectedCode] = useState(work[0].auroraCode);
 
   useEffect(() => {
     setTimeout(() => setLoading(false));
@@ -64,9 +47,9 @@ const Work = () => {
                 className={styles.aurora}
                 onMouseOver={() => {
                   setSelected(images.aurora);
-                  setSelectedText(auroraText);
-                  setSelectedTitle(auroraTitle);
-                  setSelectedCode(auroraCode);
+                  setSelectedText(work[0].auroraText);
+                  setSelectedTitle(work[0].auroraTitle);
+                  setSelectedCode(work[0].auroraCode);
                 }}
               >
                 Aurora Synth
@@ -78,9 +61,9 @@ const Work = () => {
                 className={styles.karaoke}
                 onMouseOver={() => {
                   setSelected(images.karaoke);
-                  setSelectedText(karaokeText);
-                  setSelectedTitle(karaokeTitle);
-                  setSelectedCode(karaokeCode);
+                  setSelectedText(work[1].karaokeText);
+                  setSelectedTitle(work[1].karaokeTitle);
+                  setSelectedCode(work[1].karaokeCode);
                 }}
               >
                 Karaoke Roulette
@@ -95,9 +78,9 @@ const Work = () => {
                 className={styles.chatable}
                 onMouseOver={() => {
                   setSelected(images.chatable);
-                  setSelectedText(chatableText);
-                  setSelectedTitle(chatableTitle);
-                  setSelectedCode(chatableCode);
+                  setSelectedText(work[2].chatableText);
+                  setSelectedTitle(work[2].chatableTitle);
+                  setSelectedCode(work[2].chatableCode);
                 }}
               >
                 Chatable
@@ -109,9 +92,9 @@ const Work = () => {
                 className={styles.bloom}
                 onMouseOver={() => {
                   setSelected(images.bloom);
-                  setSelectedText(bloomText);
-                  setSelectedTitle(bloomTitle);
-                  setSelectedCode(bloomCode);
+                  setSelectedText(work[3].bloomText);
+                  setSelectedTitle(work[3].bloomTitle);
+                  setSelectedCode(work[3].bloomCode);
                 }}
               >
                 Bloom Financial

@@ -1,21 +1,30 @@
 .container {
-  font-family: "Urbanist", sans-serif;
-  font-weight: 900;
+  font-family: "Eurostile";
   font-size: 1rem;
   letter-spacing: 2px;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.contactMe {
-  font-size: 1rem;
+.contactMe h1 {
+  font-weight: 200;
+  font-size: 2.5rem;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
-.text {
+.text h3 {
+  font-weight: 200;
   padding: 0% 0% 0% 10%;
   width: 80%;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+
+.socials h2,
+.contacts h2 {
+  font-weight: 200;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  animation: myAnim2 0.4s ease 0s 1 normal forwards;
 }
 
 .socials,
@@ -29,7 +38,7 @@
 }
 .socials a,
 .contacts a {
-  animation: myAnim 0.5s ease 0s 1 normal forwards;
+  animation: myAnim2 0.5s ease 0s 1 normal forwards;
 }
 .socials a:hover,
 .contacts a:hover {
@@ -51,6 +60,18 @@
   0% {
     opacity: 0;
     transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes myAnim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
   }
 
   100% {

@@ -1,16 +1,17 @@
 .title {
-  font-family: "Roboto", sans-serif;
-  font-size: 9.5rem;
-  letter-spacing: -10px;
+  font-family: "Eurostile";
+  font-size: 6rem;
+  letter-spacing: -5px;
   position: relative;
-  height: 0.75em;
-  left: 1.1em;
+  height: 1.75em;
+  top: 1em;
+  left: 1.4em;
   text-align: start;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
 .description {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Eurostile";
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -20,14 +21,18 @@
 
 .phrase {
   text-decoration: none;
-  font-weight: 500;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  font-weight: 400;
   width: 25%;
+  padding-left: 5%;
   animation: myAnim 2s ease 0s 1 normal backwards;
 }
 
 .toggler {
   position: relative;
   z-index: 1;
+  padding-left: 5%;
 }
 
 @media (max-width: 600px) {
