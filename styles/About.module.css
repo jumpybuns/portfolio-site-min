@@ -5,7 +5,7 @@
   text-align: center;
 }
 .aboutMeBox {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 200;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
@@ -16,7 +16,7 @@
   animation: myAnim 2s ease 0s 1 normal backwards;
 }
 .techStack h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 200;
   animation: myAnim2 0.2s ease 0s 1 normal backwards;
 }

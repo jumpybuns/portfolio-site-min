@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Urbanist&display=swap");
+
+@font-face {
+  font-family: "Eurostile";
+  src: url(../public/fonts/EurostileLTStd-Ex2.otf);
+}
+
 :root {
   --primary: #fafafa;
   --secondary: #fdf2d4;
@@ -11,7 +17,7 @@ html,
 body {
   width: 100vw;
   min-height: 100vh;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Eurostile";
   margin: 0;
   padding: 0;
   overflow-x: hidden;
