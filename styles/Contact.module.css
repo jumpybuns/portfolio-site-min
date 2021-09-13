@@ -9,10 +9,12 @@
 .contactMe h1 {
   font-weight: 200;
   font-size: 2.5rem;
+  text-transform: uppercase;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
 .text h3 {
+  font-family: "Bookman";
   font-weight: 200;
   padding: 0% 0% 0% 10%;
   width: 80%;
@@ -44,6 +46,9 @@
 .contacts a:hover {
   color: var(--highlight);
   text-decoration: underline;
+  transform: scale(1.7);
+  animation: myAnim3 0.5s ease 0s 1 normal;
+  transition: 0.2s ease-in;
 }
 
 .resume {

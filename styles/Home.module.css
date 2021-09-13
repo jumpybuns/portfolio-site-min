@@ -1,17 +1,26 @@
-.title {
+.ethan,
+.pierce {
+  margin: 0 0 0 10%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
   font-family: "Eurostile";
   font-size: 6rem;
-  letter-spacing: -5px;
-  position: relative;
-  height: 1.75em;
-  top: 1em;
-  left: 1.4em;
+  letter-spacing: -1px;
   text-align: start;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
+.ethan {
+  margin-top: 15%;
+}
+
+.pierce {
+  padding-left: 15%;
+}
 .description {
-  font-family: "Eurostile";
+  font-family: "Bookman";
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -21,6 +30,7 @@
 
 .phrase {
   text-decoration: none;
+  font-family: "Eurostile";
   font-size: 0.75em;
   letter-spacing: 2px;
   font-weight: 400;
@@ -32,7 +42,7 @@
 .toggler {
   position: relative;
   z-index: 1;
-  padding-left: 5%;
+  padding: 5% 0 0 5%;
 }
 
 @media (max-width: 600px) {
