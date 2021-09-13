@@ -1,17 +1,17 @@
 .title {
-  font-family: "Poiret One", cursive;
-  font-weight: 100;
-  font-size: 9rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 9.5rem;
+  letter-spacing: -10px;
   position: relative;
-  height: 1em;
-  left: 1em;
+  height: 0.75em;
+  left: 1.1em;
   text-align: start;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
 .description {
-  font-family: "Poiret One", cursive;
-  font-weight: 900;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,8 @@
 }
 
 .phrase {
-  font-weight: 900;
+  text-decoration: none;
+  font-weight: 500;
   width: 25%;
   animation: myAnim 2s ease 0s 1 normal backwards;
 }
