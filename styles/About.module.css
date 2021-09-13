@@ -18,7 +18,7 @@
 .techStack h1 {
   font-size: 3rem;
   font-weight: 200;
-  animation: myAnim 0.2s ease 0s 1 normal forwards;
+  animation: myAnim2 0.2s ease 0s 1 normal backwards;
 }
 
 .text2 h2 {
@@ -29,6 +29,18 @@
   0% {
     opacity: 0;
     transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes myAnim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
   }
 
   100% {
