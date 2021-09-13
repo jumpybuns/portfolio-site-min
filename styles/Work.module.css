@@ -1,5 +1,5 @@
 .container {
-  font-family: "Poiret One", cursive;
+  font-family: "Urbanist", sans-serif;
   font-weight: 200;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -9,7 +9,6 @@
 }
 
 .work {
-  font-family: "Poiret One", cursive;
   font-size: 3rem;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
@@ -17,6 +16,7 @@
 .links {
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1.5em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

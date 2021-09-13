@@ -9,22 +9,19 @@
 
 .circ {
   fill: coral;
-  stroke: black;
-  stroke-width: 3;
+  /* stroke: black;
+  stroke-width: 3; */
   transition: ease-in-out 3s;
   opacity: 25%;
 }
 
 .circ active {
   fill: coral;
-  stroke: black;
-  stroke-width: 3;
 }
 
 .lastCircle {
   opacity: 30%;
-  stroke: black;
-  stroke-width: 3;
+
   fill: burlywood;
   z-index: 99;
 }

@@ -17,7 +17,7 @@ export default function Home() {
           <pre className={styles.title}> Ethan Pierce</pre>
           <ThemeToggler />
           <p className={styles.phrase}>
-            CLICK AROUND TO HELP ME DESIGN MY HOME PAGE
+            CLICK AROUND TO SEE THE FLUIDITY OF COLLABORATION IN ACTION
           </p>
           <h2 className={styles.description}>
             Software Developer Based in Portland, OR

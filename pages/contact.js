@@ -17,8 +17,8 @@ const Contact = () => {
         </div>
         <div className={styles.text}>
           <h3>
-            Drop me line. I love to chat about projects, philosphy, games,
-            music, art, movies...everything{" "}
+            Drop me line. I would love to chat about projects, philosphy, games,
+            music, art, movies...everything!{" "}
           </h3>
         </div>
         <ul className={styles.socials}>
