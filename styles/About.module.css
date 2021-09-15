@@ -11,6 +11,11 @@
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
+.text {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
 .text h3 {
   font-size: 1.2em;
   font-weight: 200;

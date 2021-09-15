@@ -23,9 +23,9 @@ const About = () => {
           <h3>
             Able to work independently and think critically to develop
             human-centered solutions. I am an efficient, fun, and patient
-            engineer with excellent communication skills that is able to teach
-            and explain complex concepts in a way that relates to and reinforces
-            confidence in the individual.
+            engineer with excellent<br></br> communication skills that is able
+            to teach and explain complex concepts in a way that relates to and
+            reinforces confidence in the individual.
           </h3>
         </div>
 
