@@ -16,7 +16,7 @@
 .text h3 {
   font-family: "Bookman";
   font-weight: 200;
-  padding: 0% 0% 0% 15%;
+  margin: 0 150px 0 100px;
   width: 80%;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
