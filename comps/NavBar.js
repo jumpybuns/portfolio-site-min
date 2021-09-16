@@ -4,7 +4,7 @@ import styles from "../styles/Nav.module.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import MyDropdown from "../pages/MyDropdown";
+import MyDropdown from "../pages/myDropdown";
 import { useRouter } from "next/router";
 
 const menu = [
