@@ -33,6 +33,17 @@
   line-height: 0.25em;
 }
 
+@media (max-width: 768px) {
+  .text {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .text2 h2 {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+
 @keyframes myAnim {
   0% {
     opacity: 0;
