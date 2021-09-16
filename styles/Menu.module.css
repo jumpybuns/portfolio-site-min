@@ -12,11 +12,15 @@
   box-sizing: content-box;
   width: 100%;
   padding-top: 38px;
+  outline: none;
+  border: none;
 }
 
 .menuItems a {
   display: grid;
   grid-auto-columns: 1;
+  outline: none;
+  border: none;
   box-sizing: border-box;
   width: 100%;
   padding: 5px;
