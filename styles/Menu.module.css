@@ -1,35 +1,39 @@
 .container {
   display: none;
+}
+.menu {
   position: fixed;
-  top: 2%;
-  right: 2%;
-  z-index: 99;
-  font-family: "Eurostile";
+  right: 5px;
+  top: 5px;
+  background: var(--primary);
 }
+
 .menuItems {
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background: red;
-  margin: 2%;
-  line-height: 25px;
+  box-sizing: content-box;
+  width: 100%;
+  padding-top: 38px;
 }
 
-#item:hover {
+.menuItems a {
+  display: grid;
+  grid-auto-columns: 1;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+}
+
+.menuItems a:hover {
   color: var(--highlight);
-}
-
-.active:hover {
-  color: red;
 }
 
 @media (max-width: 768px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    display: block;
+    z-index: 99;
+    font-family: "Eurostile";
+    max-width: 100%;
   }
 }

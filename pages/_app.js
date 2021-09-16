@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useReducer, createContext } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../styles/globals.css";
 import Layout from "../comps/Layout";
 import Loading from "./loading.js";
 import { GlobalStyles } from "../theme/GlobalStyles";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import PropTypes from "prop-types";
 import ThemeProvider from "../theme/ThemeProvider";
 

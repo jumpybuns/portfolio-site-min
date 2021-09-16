@@ -18,6 +18,12 @@
   --secondaryText: #777;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html,
 body {
   width: 100vw;
