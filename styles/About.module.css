@@ -34,6 +34,9 @@
 }
 
 @media (max-width: 768px) {
+  .aboutMeBox {
+    margin-top: 15%;
+  }
   .text {
     margin-right: 25px;
     margin-left: 25px;
