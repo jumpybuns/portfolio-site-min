@@ -42,9 +42,9 @@
     margin-right: 25px;
     margin-left: 25px;
   }
-  .text2 h2 {
-    margin-right: 25px;
-    margin-left: 25px;
+  .text2 {
+    width: 100vw;
+    font-size: 0.8em;
   }
 }
 
