@@ -11,7 +11,7 @@ const Circles = () => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    setWidth(window.innerWidth / 3);
+    setWidth(window.innerWidth);
   }, []);
 
   useEffect(() => {

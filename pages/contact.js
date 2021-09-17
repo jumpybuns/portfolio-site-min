@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import styles from "../styles/Contact.module.css";
 import Circles from "../svg/staticCircles";
-import Resume from "../public/resume.png";
 import Link from "next/link";
 
 const Contact = () => {
@@ -66,7 +65,9 @@ const Contact = () => {
           <li>541.999.9714</li>
         </ul>
         <div className={styles.resume}>
-          <a href="/resume.png">Resume</a>
+          <a href="/resume.png" download="Ethan Pierce">
+            Resume
+          </a>
         </div>
       </div>
     </>
