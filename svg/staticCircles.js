@@ -11,20 +11,12 @@ const Circles = () => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    setWidth(window.innerWidth / 3);
   }, []);
 
   useEffect(() => {
     setHeight(window.innerHeight);
   }, []);
-
-  const handleMouseMove = useCallback(
-    (event) => {
-      const { clientX, clientY } = event;
-      setMousePosition({ x: clientX, y: clientY });
-    },
-    [setMousePosition]
-  );
 
   return (
     <div id="container" className={styles.container}>

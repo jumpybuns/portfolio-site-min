@@ -28,7 +28,6 @@ function MyApp(props) {
         <ThemeProvider>
           <Layout>
             <GlobalStyles />
-
             <Component {...pageProps} />
           </Layout>
         </ThemeProvider>
