@@ -13,14 +13,19 @@
   letter-spacing: -1px;
   text-align: start;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
+  opacity: 0;
 }
 
 .ethan {
   margin-top: 12%;
+  transform: translate(-300px, 0) scale(0);
+  animation: sideSlide 2.5s forwards;
 }
 
 .pierce {
   padding-left: 25%;
+  transform: translate(-300px, 0) scale(0);
+  animation: sideSlide 3s forwards;
 }
 .description {
   font-family: "Bookman";
@@ -40,7 +45,7 @@
   font-weight: 400;
   width: 25%;
   padding-left: 5%;
-  animation: myAnim 2s ease 0s 1 normal backwards;
+  animation: myAnim 4s ease 1.7s 1 normal backwards;
 }
 
 .toggler {
@@ -73,5 +78,16 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes sideSlide {
+  60% {
+    transform: translate(20px, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
   }
 }
