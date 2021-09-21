@@ -65,7 +65,7 @@ const Contact = () => {
           <li>541.999.9714</li>
         </ul>
         <div className={styles.resume}>
-          <a href="/resume.png" download="Ethan Pierce">
+          <a href="/resume.pdf" download="Ethan Pierce">
             Resume
           </a>
         </div>
