@@ -90,14 +90,15 @@ const Work = () => {
             </a>
           </Link>
         </div>
-        <Image
-          className={styles.images}
-          src={selected}
-          alt="project"
-          width={384}
-          height={216}
-        />
-
+        <div className={styles.imageBox}>
+          <Image
+            className={styles.images}
+            src={selected}
+            alt="project"
+            width={384}
+            height={216}
+          />
+        </div>
         <div className={styles.description}>
           <p>{selectedText}</p>
         </div>

@@ -56,16 +56,25 @@
 
 @media (max-width: 600px) {
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
     margin-top: 10%;
   }
   .ethan,
   .pierce {
-    margin: 0;
-    font-size: 10vw;
+    padding: 0;
+    font-size: 18vw;
+  }
+  .pierce {
+    padding-left: 15%;
   }
 
   .description {
     font-size: 1.25rem;
+    margin: 10% 5% 50% 5%;
   }
 }
 
