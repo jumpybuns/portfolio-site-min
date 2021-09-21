@@ -20,7 +20,7 @@ const Circles = () => {
 
   return (
     <div id="container" className={styles.container}>
-      <svg className={styles.mydivheader} width={width} height={height}>
+      <svg className={styles.mydivheader} width="768px" height={height}>
         <circle
           className={styles.circ}
           cx={mousePosition.x}

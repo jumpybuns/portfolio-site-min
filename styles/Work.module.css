@@ -4,7 +4,7 @@
   letter-spacing: 2px;
   padding-bottom: 20px;
   text-align: center;
-  z-index: 99;
+  z-index: 1;
 }
 
 .work {
@@ -25,6 +25,22 @@
   align-items: baseline;
   padding-bottom: 20px;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+
+.aurora {
+  background: transparent;
+}
+
+.karaoke {
+  background: transparent;
+}
+
+.chatable {
+  background: transparent;
+}
+
+.bloom {
+  background: transparent;
 }
 .aurora:hover {
   color: var(--highlight);

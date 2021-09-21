@@ -13,7 +13,7 @@ const Contact = () => {
       <div id="contact" className={styles.container}>
         <Circles />
         <div className={styles.contactMe}>
-          <h1>Contact Me</h1>
+          <h1>Contact</h1>
         </div>
         <div className={styles.text}>
           <h3>
@@ -65,7 +65,7 @@ const Contact = () => {
           <li>541.999.9714</li>
         </ul>
         <div className={styles.resume}>
-          <a href="/resume.png" download="Ethan Pierce">
+          <a href="/resume.pdf" download="Ethan Pierce">
             Resume
           </a>
         </div>

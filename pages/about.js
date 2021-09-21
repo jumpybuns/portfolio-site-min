@@ -11,7 +11,7 @@ const About = () => {
       </Head>
       <Circles />
       <div className={styles.container}>
-        <h1 className={styles.aboutMeBox}>ABOUT ME</h1>
+        <h1 className={styles.aboutMeBox}>ABOUT</h1>
         <div className={styles.text}>
           <h3>
             Creative problem solver, communicative collaborator with a passion
