@@ -41,6 +41,7 @@
 .socials a,
 .contacts a {
   animation: myAnim2 0.5s ease 0s 1 normal forwards;
+  background: transparent;
 }
 .socials a:hover,
 .contacts a:hover {
