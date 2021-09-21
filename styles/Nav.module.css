@@ -1,6 +1,6 @@
 .container {
   height: 100%;
-  width: 100px;
+  width: 110px;
   background: var(--primary);
   position: fixed;
   right: 3%;
@@ -35,6 +35,9 @@
   color: var(--highlight);
 }
 
+.link:active {
+  transform: scale(0.95);
+}
 .socials {
   margin: 0 auto;
   display: flex;

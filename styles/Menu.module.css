@@ -13,9 +13,11 @@
 }
 
 .menuItems {
+  animation: growDown 1s ease-in-out forwards;
+  position: fixed;
+  top: 40px;
+  right: 5px;
   box-sizing: content-box;
-  width: 110%;
-  padding-top: 38px;
   outline: none;
   box-shadow: 22px 21px 51px -32px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 22px 21px 51px -32px rgba(0, 0, 0, 0.75);
@@ -36,12 +38,14 @@
   grid-auto-columns: 1;
   outline: none;
   box-sizing: border-box;
-  width: 100%;
   padding: 5px;
 }
 
 .menuItems a:hover {
   color: var(--highlight);
+}
+.menuItems a:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 768px) {
@@ -52,6 +56,5 @@
     display: block;
     z-index: 99;
     font-family: "Eurostile";
-    max-width: 100%;
   }
 }

@@ -3,6 +3,7 @@
 }
 .ethan,
 .pierce {
+  background: transparent;
   margin: 0 150px 0 150px;
   padding: 0 0 0 15%;
   display: flex;
@@ -13,7 +14,6 @@
   letter-spacing: -1px;
   text-align: start;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
-  opacity: 0;
 }
 
 .ethan {
