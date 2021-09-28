@@ -25,12 +25,16 @@
 .techStack h1 {
   font-size: 2.5rem;
   font-weight: 200;
-  animation: myAnim2 0.2s ease 0s 1 normal backwards;
+  animation: myAnim2 0.5s ease 0s 1 normal backwards;
 }
 
 .text2 h2 {
   font-family: "Bookman";
   line-height: 0.25em;
+  animation: myAnim2 0.5s ease 0s 1 normal backwards;
+}
+.text2 pre {
+  animation: myAnim2 0.5s ease 0s 1 normal backwards;
 }
 
 @media (max-width: 768px) {
@@ -65,7 +69,7 @@
 @keyframes myAnim2 {
   0% {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-40px);
   }
 
   100% {
