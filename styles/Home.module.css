@@ -18,14 +18,10 @@
 
 .ethan {
   margin-top: 12%;
-  transform: translate(-300px, 0) scale(0);
-  animation: sideSlide 2.5s forwards;
 }
 
 .pierce {
   padding-left: 25%;
-  transform: translate(-300px, 0) scale(0);
-  animation: sideSlide 3s forwards;
 }
 .description {
   font-family: "Bookman";
@@ -34,7 +30,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: myAnim 0.5s ease 0s 1 normal backwards;
+  transform: translate(-300px, 0) scale(0);
+  animation: sideSlide 2.5s forwards;
 }
 
 .phrase {
