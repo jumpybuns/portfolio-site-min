@@ -2,11 +2,13 @@
 
 @font-face {
   font-family: "Eurostile";
+  font-display: block;
   src: url(../public/fonts/EurostileLTStd-Ex2.otf);
 }
 
 @font-face {
   font-family: "Bookman";
+  font-display: block;
   src: url(../public/fonts/BookmanOldStyle.ttc);
 }
 
@@ -28,7 +30,6 @@ html,
 body {
   width: 100vw;
   min-height: 100vh;
-  font-family: "Bookman";
   margin: 0;
   padding: 0;
   overflow-x: hidden;
