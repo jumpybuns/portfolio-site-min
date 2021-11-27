@@ -1,5 +1,5 @@
 .container {
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-size: 1rem;
   letter-spacing: 2px;
   padding-bottom: 20px;
@@ -39,7 +39,7 @@
   background: transparent;
 }
 
-.bloom {
+.drawing {
   background: transparent;
 }
 .aurora:hover {
@@ -56,7 +56,7 @@
   text-decoration: underline;
 }
 
-.bloom:hover {
+.drawing:hover {
   color: var(--highlight);
   text-decoration: underline;
 }
@@ -71,7 +71,7 @@
   letter-spacing: 1px;
   padding-left: 3%;
   width: 90%;
-  font-family: "Bookman";
+  font-family: 'Bookman';
   animation: fadeIn 1s ease-in;
 }
 
