@@ -1,25 +1,25 @@
-import React, { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import aurora from "../public/auroraWide.jpg";
-import karaoke from "../public/karaokeWide.jpg";
-import chatable from "../public/chatableWide.jpg";
-import bloom from "../public/bloomWide.jpg";
-import styles from "../styles/Work.module.css";
-import Circles from "../svg/staticCircles";
-import projects from "./api/workDetails";
+import React, { useState } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import aurora from '../public/auroraWide.jpg';
+import karaoke from '../public/karaokeWide.jpg';
+import chatable from '../public/chatableWide.jpg';
+import drawing from '../public/drawing.jpg';
+import styles from '../styles/Work.module.css';
+import Circles from '../svg/staticCircles';
+import projects from './api/workDetails';
 
 const work = projects.map((item) => {
   return item;
 });
 
-const images = { aurora, karaoke, chatable, bloom };
+const images = { aurora, karaoke, chatable, drawing };
 
 const Work = () => {
-  const [selected, setSelected] = useState(images.aurora);
-  const [selectedText, setSelectedText] = useState(work[0].auroraText);
-  const [selectedTitle, setSelectedTitle] = useState(work[0].auroraTitle);
+  const [selected, setSelected] = useState(images.drawing);
+  const [selectedText, setSelectedText] = useState(work[0].drawText);
+  const [selectedTitle, setSelectedTitle] = useState(work[0].drawTitle);
 
   return (
     <>
@@ -31,12 +31,25 @@ const Work = () => {
         <Circles />
         <h1 className={styles.work}>WORK</h1>
         <div className={styles.links}>
+          <Link href={'https://colorfull.vercel.app/'} passHref>
+            <a
+              target='_blank'
+              className={styles.drawing}
+              onMouseOver={() => {
+                setSelected(images.drawing);
+                setSelectedText(work[3].drawText);
+                setSelectedTitle(work[3].drawTitle);
+              }}
+            >
+              Colorful
+            </a>
+          </Link>
           <Link
-            href={"https://aurora-synth.netlify.app/aurora/index.html"}
+            href={'https://aurora-synth.netlify.app/aurora/index.html'}
             passHref
           >
             <a
-              target="_blank"
+              target='_blank'
               className={styles.aurora}
               onMouseOver={() => {
                 setSelected(images.aurora);
@@ -47,9 +60,9 @@ const Work = () => {
               Aurora Synth
             </a>
           </Link>
-          <Link href={"https://karaoke-roulette.netlify.app/"} passHref>
+          <Link href={'https://karaoke-roulette.netlify.app/'} passHref>
             <a
-              target="_blank"
+              target='_blank'
               className={styles.karaoke}
               onMouseOver={() => {
                 setSelected(images.karaoke);
@@ -61,11 +74,11 @@ const Work = () => {
             </a>
           </Link>
           <Link
-            href={"https://adoring-wright-0eba98.netlify.app/landing-page"}
+            href={'https://adoring-wright-0eba98.netlify.app/landing-page'}
             passHref
           >
             <a
-              target="_blank"
+              target='_blank'
               className={styles.chatable}
               onMouseOver={() => {
                 setSelected(images.chatable);
@@ -76,25 +89,12 @@ const Work = () => {
               Chatable
             </a>
           </Link>
-          <Link href={"https://bloom-financial.netlify.app/"} passHref>
-            <a
-              target="_blank"
-              className={styles.bloom}
-              onMouseOver={() => {
-                setSelected(images.bloom);
-                setSelectedText(work[3].bloomText);
-                setSelectedTitle(work[3].bloomTitle);
-              }}
-            >
-              Bloom Financial
-            </a>
-          </Link>
         </div>
         <div className={styles.imageBox}>
           <Image
             className={styles.images}
             src={selected}
-            alt="project"
+            alt='project'
             width={384}
             height={216}
           />
