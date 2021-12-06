@@ -1,18 +1,18 @@
-import React from "react";
-import Link from "next/link";
-import styles from "../styles/Nav.module.css";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import EmailIcon from "@material-ui/icons/Email";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import MyDropdown from "../pages/myDropdown";
-import { useRouter } from "next/router";
+import React from 'react';
+import Link from 'next/link';
+import styles from '../styles/Nav.module.css';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MyDropdown from '../pages/myDropdown';
+import { useRouter } from 'next/router';
 
 const menu = [
-  { title: "Home", path: "/" },
-  { title: "About", path: "/about" },
-  { title: "Work", path: "/work" },
-  { title: "Vlog", path: "/vlog" },
-  { title: "Contact", path: "/contact" },
+  { title: 'Home', path: '/' },
+  { title: 'About', path: '/about' },
+  { title: 'Work', path: '/work' },
+  // { title: "Vlog", path: "/vlog" },
+  { title: 'Contact', path: '/contact' },
 ];
 
 const NavBar = () => {
@@ -37,21 +37,21 @@ const NavBar = () => {
         })}
 
         <div className={styles.socials}>
-          <Link href={"https://github.com/jumpybuns"} passHref>
-            <a target="_blank">
+          <Link href={'https://github.com/jumpybuns'} passHref>
+            <a target='_blank'>
               <GitHubIcon />
             </a>
           </Link>
-          <Link href={"mailto:ethanpiercepresents@gmail.com"} passHref>
-            <a target="_blank">
+          <Link href={'mailto:ethanpiercepresents@gmail.com'} passHref>
+            <a target='_blank'>
               <EmailIcon />
             </a>
           </Link>
           <Link
-            href={"https://www.linkedin.com/in/ethanpiercepresents/"}
+            href={'https://www.linkedin.com/in/ethanpiercepresents/'}
             passHref
           >
-            <a target="_blank">
+            <a target='_blank'>
               <LinkedInIcon />
             </a>
           </Link>

@@ -1,7 +1,7 @@
-import React from "react";
-import Head from "next/head";
-import Circles from "../svg/staticCircles";
-import styles from "../styles/About.module.css";
+import React from 'react';
+import Head from 'next/head';
+import Circles from '../svg/staticCircles';
+import styles from '../styles/About.module.css';
 
 const About = () => {
   return (
@@ -34,16 +34,16 @@ const About = () => {
         </div>
         <div className={styles.text2}>
           <h2>Languages</h2>
-          <pre>HTML CSS Javascript</pre>
+          <pre>HTML CSS Typescript</pre>
 
           <h2>Front End</h2>
-          <pre>React NextJS Socket.IO D3 Material-UI</pre>
+          <pre>React NextJS Tailwind THREE.JS</pre>
 
           <h2>Back End</h2>
           <pre>Node GraphQL postgreSQL Express</pre>
 
           <h2>Dev Tools</h2>
-          <pre>Netlify Heroku MongoDB Postman PGAdmin</pre>
+          <pre>Netlify Vercel Heroku Postman PGAdmin</pre>
         </div>
       </div>
     </>
