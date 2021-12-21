@@ -1,21 +1,20 @@
-import Link from "next/link";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+import Link from 'next/link';
 
 const NotFound = () => {
-  const router = useRouter();
-
   return (
-    <div className="not-found">
-      <h1>Oooops...</h1>
-      <h2>That page cannot be found.</h2>
-      <p>
-        Go back to the {""}
-        <Link href="/">
-          <a>Home Page</a>
-        </Link>
-      </p>
-    </div>
+    <>
+      {/* Just in case I have a 404 page */}
+      <div className='not-found'>
+        <h1>Oooops...</h1>
+        <h2>That page cannot be found.</h2>
+        <p>
+          Go back to the {''}
+          <Link href='/'>
+            <a>Home Page</a>
+          </Link>
+        </p>
+      </div>
+    </>
   );
 };
 

@@ -1,3 +1,5 @@
+/* WORK PAGE */
+
 .container {
   font-family: 'Eurostile';
   font-size: 1rem;
@@ -7,11 +9,15 @@
   z-index: 1;
 }
 
+/* TITLE */
+
 .work {
   font-weight: 200;
   font-size: 2.5rem;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
+
+/* PROJECT LINKS */
 
 .links {
   font-size: 1.5rem;
@@ -61,10 +67,14 @@
   text-decoration: underline;
 }
 
+/* PROJECT IMAGES */
+
 .images {
   border-radius: 50%;
   animation: fadeIn 1s ease-in;
 }
+
+/* PROJECT DESCRIPTIONS */
 
 .description {
   font-size: 1.25em;

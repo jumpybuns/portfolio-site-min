@@ -1,5 +1,7 @@
-import React, { useState, useCallback, useEffect } from "react";
-import styles from "../styles/StaticCircles.module.css";
+import React, { useState, useCallback, useEffect } from 'react';
+import styles from '../styles/StaticCircles.module.css';
+
+// CIRCLE START DATA
 
 const circleRadius = 240;
 const intialMousePosition = { x: 0, y: 0 };
@@ -10,6 +12,8 @@ const Circles = () => {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
 
+  // SVG SIZE
+
   useEffect(() => {
     setWidth(window.innerWidth / 3);
   }, []);
@@ -19,46 +23,49 @@ const Circles = () => {
   }, []);
 
   return (
-    <div id="container" className={styles.container}>
-      <svg className={styles.mydivheader} width="100vw" height="100vh">
-        <circle
-          className={styles.circ}
-          cx={mousePosition.x}
-          cy={mousePosition.y}
-          r={circleRadius + circleRadius2}
-        />
-        <circle
-          className={styles.circ}
-          cx={mousePosition.x / 4}
-          cy={mousePosition.y / 2}
-          r={circleRadius}
-        />
-        <circle
-          className={styles.circ}
-          cx={mousePosition.x / 2}
-          cy={mousePosition.y / 4}
-          r={circleRadius}
-        />
-        <circle
-          className={styles.circ}
-          cx={mousePosition.x * 2}
-          cy={mousePosition.y * 2}
-          r={circleRadius - circleRadius2}
-        />
-        <circle
-          className={styles.circ}
-          cx={mousePosition.x * 0.4}
-          cy={mousePosition.y * 0.4}
-          r={circleRadius - circleRadius2}
-        />
-        <circle
-          className={styles.lastCircle}
-          cx={mousePosition.x * 0.6}
-          cy={mousePosition.y * 0.6}
-          r={circleRadius - circleRadius2}
-        />
-      </svg>
-    </div>
+    <>
+      {/* STATIC CIRCLE SVGs */}
+      <div id='container' className={styles.container}>
+        <svg className={styles.mydivheader} width='100vw' height='100vh'>
+          <circle
+            className={styles.circ}
+            cx={mousePosition.x}
+            cy={mousePosition.y}
+            r={circleRadius + circleRadius2}
+          />
+          <circle
+            className={styles.circ}
+            cx={mousePosition.x / 4}
+            cy={mousePosition.y / 2}
+            r={circleRadius}
+          />
+          <circle
+            className={styles.circ}
+            cx={mousePosition.x / 2}
+            cy={mousePosition.y / 4}
+            r={circleRadius}
+          />
+          <circle
+            className={styles.circ}
+            cx={mousePosition.x * 2}
+            cy={mousePosition.y * 2}
+            r={circleRadius - circleRadius2}
+          />
+          <circle
+            className={styles.circ}
+            cx={mousePosition.x * 0.4}
+            cy={mousePosition.y * 0.4}
+            r={circleRadius - circleRadius2}
+          />
+          <circle
+            className={styles.lastCircle}
+            cx={mousePosition.x * 0.6}
+            cy={mousePosition.y * 0.6}
+            r={circleRadius - circleRadius2}
+          />
+        </svg>
+      </div>
+    </>
   );
 };
 

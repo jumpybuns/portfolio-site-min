@@ -1,6 +1,6 @@
-import Image from "next/image";
-import styles from "../styles/Resume.module.css";
-import Head from "next/head";
+import Image from 'next/image';
+import styles from '../styles/Resume.module.css';
+import Head from 'next/head';
 
 const Resume = () => {
   return (
@@ -9,11 +9,12 @@ const Resume = () => {
         <title>Ethan Pierce | Resume</title>
       </Head>
       <div>
+        {/* RESUME PDF */}
         <Image
           className={styles.resume}
-          src="/resume.png"
-          alt=""
-          layout="responsive"
+          src='/resume.png'
+          alt=''
+          layout='responsive'
           width={36}
           height={48}
         />

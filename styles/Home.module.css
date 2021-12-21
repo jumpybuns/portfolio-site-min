@@ -1,6 +1,11 @@
+/* HOME PAGE*/
+
 .container {
   margin: 0 5% 0 5%;
 }
+
+/* TITLE */
+
 .ethan,
 .pierce {
   background: transparent;
@@ -9,7 +14,7 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-size: 6rem;
   letter-spacing: -1px;
   text-align: start;
@@ -23,8 +28,11 @@
 .pierce {
   padding-left: 25%;
 }
+
+/* DESCRIPTION */
+
 .description {
-  font-family: "Bookman";
+  font-family: 'Bookman';
   font-size: 2rem;
   font-weight: 500;
   display: flex;
@@ -34,9 +42,11 @@
   animation: sideSlide 2.5s forwards;
 }
 
+/* CLICK DIRECTIONS */
+
 .phrase {
   text-decoration: none;
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-size: 0.8rem;
   letter-spacing: 2px;
   font-weight: 400;
@@ -44,6 +54,8 @@
   padding-left: 5%;
   animation: myAnim 4s ease 1.7s 1 normal backwards;
 }
+
+/* DARK MODE BUTTON */
 
 .toggler {
   position: relative;
