@@ -1,38 +1,52 @@
+/* ABOUT ME */
+
 .container {
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-size: 1rem;
   letter-spacing: 2px;
   padding-bottom: 20px;
   text-align: center;
 }
+
+/* TITLE */
+
 .aboutMeBox {
   font-size: 2.5rem;
   font-weight: 200;
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
+/* DESCRIPTION BOX */
 .text {
   margin-right: 150px;
   margin-left: 150px;
 }
-
+/* DESCRIPTION TEXT */
 .text h3 {
   font-size: 1.2em;
   font-weight: 200;
-  font-family: "Bookman";
+  font-family: 'Bookman';
   animation: myAnim 2s ease 0s 1 normal backwards;
 }
+
+/* TECH STACK */
+
 .techStack h1 {
   font-size: 2.5rem;
   font-weight: 200;
   animation: myAnim2 0.5s ease 0s 1 normal backwards;
 }
 
+/* TECH STACK CATEGORIES */
+
 .text2 h2 {
-  font-family: "Bookman";
+  font-family: 'Bookman';
   line-height: 0.25em;
   animation: myAnim2 0.5s ease 0s 1 normal backwards;
 }
+
+/* TECHNOLOGIES */
+
 .text2 pre {
   animation: myAnim2 0.5s ease 0s 1 normal backwards;
 }

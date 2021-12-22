@@ -1,10 +1,14 @@
+/* CONTACT PAGE */
+
 .container {
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-size: 1rem;
   letter-spacing: 2px;
   padding-bottom: 20px;
   text-align: center;
 }
+
+/* TITLE */
 
 .contactMe h1 {
   font-weight: 200;
@@ -13,13 +17,17 @@
   animation: myAnim 0.2s ease 0s 1 normal forwards;
 }
 
+/* TEXT */
+
 .text h3 {
-  font-family: "Bookman";
+  font-family: 'Bookman';
   font-weight: 200;
   margin: 0 150px 0 100px;
   width: 80%;
   animation: myAnim 0.5s ease 0s 1 normal forwards;
 }
+
+/* SOCIAL AND CONTACTS */
 
 .socials h2,
 .contacts h2 {
@@ -49,7 +57,11 @@
   text-decoration: underline;
 }
 
+/* RESUME LINK */
+
 .resume {
+  display: block;
+  justify-content: center;
   font-size: 3rem;
   line-height: 4rem;
   animation: fadeInResume 1s ease-in;

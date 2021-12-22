@@ -10,10 +10,12 @@ import styles from '../styles/Work.module.css';
 import Circles from '../svg/staticCircles';
 import projects from './api/workDetails';
 
+// PROJECT DATA
 const work = projects.map((item) => {
   return item;
 });
 
+// PROJECT IMAGES
 const images = { aurora, karaoke, chatable, drawing };
 
 const Work = () => {
@@ -26,10 +28,11 @@ const Work = () => {
       <Head>
         <title>Ethan Pierce | Work</title>
       </Head>
-
+      {/* WORK PAGE */}
       <div className={styles.container}>
         <Circles />
         <h1 className={styles.work}>WORK</h1>
+        {/* PROJECT LIST */}
         <div className={styles.links}>
           <Link href={'https://colorfull.vercel.app/'} passHref>
             <a

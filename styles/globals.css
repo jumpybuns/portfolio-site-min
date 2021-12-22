@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Urbanist&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Urbanist&display=swap');
 
 @font-face {
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-display: block;
   src: url(../public/fonts/EurostileLTStd-Ex2.otf);
 }
 
 @font-face {
-  font-family: "Bookman";
+  font-family: 'Bookman';
   font-display: block;
   src: url(../public/fonts/BookmanOldStyle.ttc);
 }
@@ -19,6 +19,8 @@
   --text: #373741;
   --secondaryText: #777;
 }
+
+/* CSS RESET */
 
 *,
 *::after,

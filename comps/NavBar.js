@@ -5,22 +5,22 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MyDropdown from '../pages/myDropdown';
+import { menu } from '../pages/api/navMenu';
 import { useRouter } from 'next/router';
 
-const menu = [
-  { title: 'Home', path: '/' },
-  { title: 'About', path: '/about' },
-  { title: 'Work', path: '/work' },
-  // { title: "Vlog", path: "/vlog" },
-  { title: 'Contact', path: '/contact' },
-];
+/**
+ * NAV MENU
+ */
 
 const NavBar = () => {
   const router = useRouter();
 
   return (
     <>
+      {/* DROPDOWN MENU */}
       <MyDropdown />
+
+      {/* MENU ITEMS LIST */}
       <div className={styles.container}>
         {menu.map((item, index) => {
           return (
@@ -35,7 +35,7 @@ const NavBar = () => {
             </Link>
           );
         })}
-
+        {/* SOCIAL ICONS */}
         <div className={styles.socials}>
           <Link href={'https://github.com/jumpybuns'} passHref>
             <a target='_blank'>

@@ -9,8 +9,11 @@ const About = () => {
       <Head>
         <title>Ethan Pierce | About</title>
       </Head>
+      {/* Animated Circle SVGs */}
       <Circles />
+      {/* ABOUT ME PAGE */}
       <div className={styles.container}>
+        {/* ABOUT */}
         <h1 className={styles.aboutMeBox}>ABOUT</h1>
         <div className={styles.text}>
           <h3>
@@ -28,7 +31,7 @@ const About = () => {
             reinforces confidence in the individual.
           </h3>
         </div>
-
+        {/* TECH STACK */}
         <div className={styles.techStack}>
           <h1>TECH STACK</h1>
         </div>
